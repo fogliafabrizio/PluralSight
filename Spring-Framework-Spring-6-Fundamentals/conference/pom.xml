@@ -4,9 +4,23 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!--
+        Quando creaimo il progetto ci viene creato il pom.xml in automatico. Con la versione del compiler corretta.
+        BASIC SKELETON
+        Aggiungiamo Spring tramite la dipendenza.
+    -->
+
     <groupId>com.pluralsight</groupId>
     <artifactId>conference</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>6.0.12</version> <!-- nel corso utilizza la 6.0.11 -->
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

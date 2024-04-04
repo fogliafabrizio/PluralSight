@@ -1,0 +1,27 @@
+package com.pluralsight.model;
+
+public class Speaker {
+
+    /*
+        Abbiamo creato il primo Model! Il nostro POJO.
+     */
+
+    private String firstName;
+    private String lastName;
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+}
