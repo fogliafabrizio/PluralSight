@@ -76,3 +76,26 @@ Ci permette di cambiare l'ambiente senza problemi.
 
 **Write Once Run Anywhere WORA!**
 
+##  Spring Configuration
+
+### Java Configuration
+
+La configurazione tramite Java è stata introdotta per eliminare la necessità di utilizzare XML (come si faceva prima).
+Non si usa più `applicationContext.xml` ma si crea il nostro contesto tramite le classi Java.
+Prima c'era troppo XML. 
+
+Tutto è disponibile tramite la configurazione Java.
+
+_Abbiamo duplicato conference in confence-java_
+
+@Configuration è una annotazione a livello di classe che ci permette di 
+sostituire XML file.
+Nel file di configurazione creiamo il nostro context.
+
+Viene usato in combinazione con @Bean (method level): quello che ritorna il metodo è un Bean.
+I nomi di classi e metodi possono essere qualsiasi. Possiamo anche dare nome specifici tramite l'annotazione.
+
+**Setter Injection** ci permette di capire la **Dependency Injection**.
+Basta settare un bean.
+
+**Constructor Injection** è come la Setter, semplicemente la dipendenza viene passato attraverso il costruttore.
